@@ -1,2 +1,17 @@
-# Question-rio-
-Programa em JS, questionário pessoal
+alert("Olá! Seja Bem-Vindo!!!\nEste é um teste para descobrir alguns dados sobre voçê. Voçê só precisará responder algumas perguntas e irei lhe dar alguns dados sobre voçê!\nEstá pronto para começar ?\n(Pressione OK para prosseguir.)")
+nome=prompt('Antes de começar digite seu nome')
+alert('Tudo bem '+nome+' ?')
+idade=parseInt(prompt('Certo! '+nome+' em que ano voçê nasceu ?'))
+ano=parseInt(prompt('Certo! Em que ano estamos ?'))
+ani=parseInt(prompt('Agora me diga! Voçê já fez aniversário esse ano ?\n(Digite 0 para NÃO ou 1 = SIM)'))
+peso=prompt('Ótimo! Qual seu peso ?\n(OBS: Use . ao invés de , .)')
+altura=prompt('Qual a sua altura ?\n(OBS: Use . ao invés de , .)')
+alert('Perfeito! Já tenho alguns do seus dados. Pronto para ver o resultado ?')
+nasceu=ano-(idade+1)+ani
+vida=(nasceu*365)
+bpa=(75*60*24*365)
+bpv=(bpa*nasceu)
+IMC=(peso/(altura**2))
+document.write(nome, ' ,voçê tem ', nasceu, ' anos e nasceu em ', idade, ' (Ano atual= ', ano,').<br>Voçê já viveu ', vida, ' dias e seu coração já bateu ', bpv,' vezes.<br>Seu peso é ', peso,' Kg e sua altura é ', altura, ' m.<br>Portanto, seu Índice de Massa corporal(IMC) é de ',IMC,' .')
+document.write('<br>Segue abaixo a tabela de IMC e compare com o seu resultado obtido.<br><br>Tabela de IMC<br><br>Abaixo de 17 - Muito abaixo do peso .<br>Entre 17 e 18,49 - Abaixo do peso .<br>Entre 18,5 e 24,99 - Peso normal .<br>Entre 25 e 29,99 - Acima do peso .<br>Entre 30 e 34,99 - Obesidade 1 .<br>Entre 35 e 39,99 - Obesidade 2 .')
+document.write('<br><br>OBS: O Índice de Massa Corporal(IMC), varia de pessoa para pessoa, ou seja, pessoas com muita massa muscular de 80 kg para cima, não quer dizer que a mesma está obesa.')
